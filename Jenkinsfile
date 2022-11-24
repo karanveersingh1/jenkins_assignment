@@ -14,7 +14,6 @@ pipeline {
         }
      stage('Test Code') {
             steps {
-                sh "chmod u+x test.py"
                 sh "python3 test.py"
             }
         }
