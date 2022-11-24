@@ -8,14 +8,14 @@ pipeline {
         }
         stage('Build Code') {
             steps {
-                sh "chmod u+x program.py"
+                sh "chmod u+x prog.py"
                 sh "./program.py"
             }
         }
      stage('Test Code') {
             steps {
-                sh "chmod u+x Test.py"
-                sh "./Test.py"
+                sh "chmod u+x test.py"
+                sh "./test.py"
             }
         }
     } 
