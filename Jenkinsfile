@@ -8,13 +8,14 @@ pipeline {
         }
         stage('Build Code') {
             steps {
-                sh "chmod u+x prog.py"
-                sh "python3 prog.py"
+                sh "chmod u+x test.py"
+                sh "python3 test.py"
             }
         }
      stage('Test Code') {
             steps {
-                sh "echo 'helo'"
+                sh "chmod u+x test.py"
+                sh "./test.py"
             }
         }
     } 
