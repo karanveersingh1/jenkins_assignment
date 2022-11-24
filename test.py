@@ -1,7 +1,5 @@
 import unittest
-
 from prog import angle_inside
-
 class TestSum(unittest.TestCase):
  def test_1(self):
   a_1 = 10
