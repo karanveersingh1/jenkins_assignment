@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/satvik-vm/se_ass6.git'
+                git 'https://github.com/karanveersingh1/jenkins_assignment.git'
             }
         }
         stage('Build Code') {
             steps {
                 sh "chmod u+x prog.py"
-                sh "./program.py"
+                sh "./prog.py"
             }
         }
      stage('Test Code') {
