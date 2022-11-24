@@ -14,6 +14,7 @@ pipeline {
         }
      stage('Test Code') {
             steps {
+                sh "pip install unittest"
                 sh "python3 test.py"
             }
         }
