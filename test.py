@@ -27,7 +27,7 @@ class TestSum(unittest.TestCase):
   b_4 = 360
   c_4 = 0
   result = angle_inside(a_4, b_4,c_4)
-  self.assertEqual(result, False) 
+  self.assertEqual(result, True) 
 
  def test_5(self):
   a_5 = 11
